@@ -1,0 +1,75 @@
+body {
+    color: black;
+    background: radial-gradient(white 3px, transparent 4px), radial-gradient(white 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+.home {
+    justify-content: center;
+    word-break: break-all;
+    text-align: center;
+    font-weight: 700;
+    /* untuk membuat teks berada di tengah secara horizontal */
+    display: flex;
+    /* untuk membuat teks berada di tengah secara vertikal */
+    align-items: center;
+    /* untuk membuat teks berada di tengah secara vertikal */
+    backdrop-filter: blur(1px);
+    /* nilai 15px dapat disesuaikan dengan kebutuhan */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* warna background agar tetap terlihat */
+}
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px 50PX;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  textarea {
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  .jenisDrop{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    text-align: left;
+    padding: 15px;
+    border: 0px solid;
+}
+.cariRek{
+  display: inline;
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+}

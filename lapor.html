@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lapor.css">
+
+    <title>Laporin Yuk</title>
+</head>
+<body>
+    <section class="home" id="home">
+        <div id="EWallet" class="tabcontent" onsubmit="">
+            <h3>Cek E-Wallet</h3>
+            <label for="jenis">Jenis E-Wallet/No Rekening Bank:</label><br><br>
+            <select type="text" class="jenisDrop" id="jenis">
+                    <option value="Jenis E-Wallet" hidden></option>
+                    <option value="Dana">Dana</option>
+                    <option value="Gopay">Gopay</option>
+                    <option value="Gopay">BNI</option>
+                    <option value="Gopay">BRI</option>
+                    <option value="Gopay">BCA</option>
+                    
+            </select>
+            <label for="message">No E-Wallet/Bank:</label><br>
+            <input type="text" class="cariRek" id="cekInput"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea class="pesan" id="pesan" name="message" required></textarea>
+            <button type="submit" onclick="lapor()">Cari</button><br><br>
+            <ul id="daftar-cekInput"> </ul>
+            <ul id="daftar-jenis"> </ul>
+            <ul id="daftar-pesan"> </ul>
+        </div>
+    </section>    
+</body>
+<script src="lapor.js"></script>
+</html>

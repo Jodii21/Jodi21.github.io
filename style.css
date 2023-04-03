@@ -1,0 +1,767 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 75%;
+    overflow: auto;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: black;
+    background: radial-gradient(white 3px, transparent 4px), radial-gradient(white 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+
+/* kode css navbar */
+
+.topnav {
+    overflow: hidden;
+    background-color: orange;
+}
+
+.topnav a {
+    float: left;
+    display: flex;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    justify-content: left;
+}
+
+.topnav a:hover {
+    background-color: black;
+    color: orange;
+}
+
+.topnav a.active {
+    background-color: white;
+    color: orange;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+/* kode css navbar  selesai */
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+
+/* kode class home */
+
+.home {
+    justify-content: center;
+    word-break: break-all;
+    text-align: center;
+    font-weight: 700;
+    /* untuk membuat teks berada di tengah secara horizontal */
+    display: flex;
+    /* untuk membuat teks berada di tengah secara vertikal */
+    align-items: center;
+    /* untuk membuat teks berada di tengah secara vertikal */
+    backdrop-filter: blur(1px);
+    /* nilai 15px dapat disesuaikan dengan kebutuhan */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* warna background agar tetap terlihat */
+}
+
+.home-detail h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.textline {
+    white-space: pre-wrap;
+}
+
+.home-detail h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 1;
+}
+
+.home-detail p {
+    font-size: 1.6rem;
+    opacity: 1
+}
+
+.home-detail h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+span {
+    color: orange;
+    word-break: break-all;
+}
+
+.home-detail .btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1rem 2.5rem;
+    border-radius: 40px;
+    color: #000;
+    background: orange;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: none;
+    transition: 0.3s ease-in-out;
+    outline: none;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn:hover a {
+    color: #FF9F55;
+}
+
+.btn:hover {
+    background: #000;
+    color: orange;
+    border: 1px solid orange;
+}
+
+.home .home-img img {
+    width: 30vw;
+}
+
+h2 {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* kode class home selesai*/
+
+
+/* kode class menukami */
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(1px);
+    /* nilai 15px dapat disesuaikan dengan kebutuhan */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* warna background agar tetap terlihat */
+}
+
+.menukami {
+    background-color: orange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 25%;
+    height: auto;
+    margin: 1rem;
+    background: orange;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-0.5rem);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h1 {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.card p {
+    font-size: 120%;
+    margin: 1rem;
+}
+
+.card button {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background: white;
+    color: 1px solid black;
+    border: black;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.card button:hover {
+    background: black;
+    color: orange;
+    border: 1px solid black;
+}
+
+
+/* kode class menukami  selesai */
+
+
+/* css untuk timeline alur pelaporan */
+
+.alur-pelaporan {
+    word-break: break-all;
+    text-align: center;
+    font-weight: 700;
+    /* untuk membuat teks berada di tengah secara horizontal */
+    display: flex;
+    /* untuk membuat teks berada di tengah secara vertikal */
+    align-items: center;
+    /* untuk membuat teks berada di tengah secara vertikal */
+    background-color: orange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.timeline {
+    color: black;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    backdrop-filter: blur(1px);
+    /* nilai 15px dapat disesuaikan dengan kebutuhan */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* warna background agar tetap terlihat */
+}
+
+.timeline::after {
+    content: ' ';
+    position: absolute;
+    width: 6px;
+    background-color: blanchedalmond;
+    top: 0;
+    bottom: 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: orange;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+
+/* pembungkus */
+
+.bungkus {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+
+/* bentuk lingkaran */
+
+.bungkus::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: black;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+/* untuk meletakkan konten di sebelah kiri */
+
+.kiri {
+    left: 0;
+}
+
+
+/* untuk meletakkan konten di sebelah kanan */
+
+.kanan {
+    left: 50%;
+}
+
+
+/* menambahkan anak panah yang menunjuk ke kanan */
+
+.kiri::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid black;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent black;
+}
+
+
+/*  menambahkan anak panah yang menunjuk ke kiri */
+
+.kanan::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid black;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent black transparent transparent;
+}
+
+
+/*fix lingkaran untuk kontainer di sisi kanan */
+
+.kanan::after {
+    left: -16px;
+}
+
+
+/* isi dari konten */
+
+.isi {
+    padding: 20px 30px;
+    background-color: orange;
+    position: relative;
+    border-radius: 6px;
+}
+
+.isi:hover {
+    transform: translateY(-0.5rem);
+}
+
+
+/* media apabila screen dibawah 600px */
+
+@media screen and (max-width: 600px) {
+    /* akan meletakkan tiang di sebelah kiri */
+    .timeline::after {
+        left: 31px;
+    }
+    /* width pembungkus */
+    .bungkus {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    /* untuk meletakkan anak panah mengarah ke kiri */
+    .bungkus::before {
+        left: 60px;
+        border: medium solid black;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent black transparent transparent;
+    }
+    /* memastikan lingkaran berada di tempat yang tepat */
+    .kiri::after,
+    .kanan::after {
+        left: 15px;
+    }
+    /*  */
+    .kanan {
+        left: 0%;
+    }
+    html {
+        font-size: 45%;
+    }
+}
+
+
+/* css untuk timeline alur pelaporan selesai */
+
+
+/* kartu our team */
+
+.our-team {
+    background-color: orange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bingkai-kartu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 3rem;
+    backdrop-filter: blur(1px);
+    /* nilai 15px dapat disesuaikan dengan kebutuhan */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* warna background agar tetap terlihat */
+}
+
+.kartu-1 {
+    position: relative;
+    overflow: hidden;
+    color: orange;
+    min-height: 400px;
+    border-radius: 1 rem;
+    max-width: 300px;
+    width: 100%;
+    background: url(1658138140554.jpg) no-repeat center center/cover;
+}
+
+.kartu-2 {
+    position: relative;
+    overflow: hidden;
+    color: orange;
+    min-height: 400px;
+    border-radius: 1 rem;
+    max-width: 300px;
+    width: 100%;
+    background: url(Bendahara\ 2\ BE-Fakhra\ Aufia\ Yumna\ Munawar.png) no-repeat center center/cover;
+}
+
+.kartu-3 {
+    position: relative;
+    overflow: hidden;
+    color: orange;
+    min-height: 400px;
+    border-radius: 1 rem;
+    max-width: 300px;
+    width: 100%;
+    background: url(Screenshot_20230403-105804_Gallery.jpg) no-repeat center center/cover;
+    align-items: center;
+}
+
+.kartu-4 {
+    position: relative;
+    overflow: hidden;
+    color: orange;
+    min-height: 400px;
+    border-radius: 1 rem;
+    max-width: 300px;
+    width: 100%;
+    background: url(IMG-20230128-WA0004.jpg) no-repeat center center/cover;
+}
+
+.isi-kartu {
+    background: rgba(0, 0, 0, .8);
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    height: 30px;
+    transition: 1s;
+}
+
+.isi-kartu::before {
+    content: 'Deskripsi';
+    display: flex;
+    align-items: center;
+    position: center;
+    width: 30%;
+    right: 0;
+    height: 40px;
+    padding: 0px 10px;
+    transition: 1s;
+    background-color: #2961db;
+}
+
+.kartu-1:hover .isi-kartu::before {
+    width: 100%;
+    content: ' ';
+    background-color: transparent;
+}
+
+.kartu-2:hover .isi-kartu::before {
+    width: 100%;
+    content: ' ';
+    background-color: transparent;
+}
+
+.kartu-3:hover .isi-kartu::before {
+    width: 100%;
+    content: ' ';
+    background-color: transparent;
+}
+
+.kartu-4:hover .isi-kartu::before {
+    width: 100%;
+    content: ' ';
+    background-color: transparent;
+}
+
+.kartu-2:hover .isi-kartu {
+    height: 50%;
+}
+
+.kartu-3:hover .isi-kartu {
+    height: 50%;
+}
+
+.kartu-1:hover .isi-kartu {
+    height: 50%;
+}
+
+.kartu-4:hover .isi-kartu {
+    height: 50%;
+}
+
+.konten-kartu {
+    padding: 2rem;
+}
+
+.job-kartu {
+    color: red;
+}
+
+.kartu-1,
+.kartu-2,
+.kartu-3,
+.kartu-4 {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .bingkai-kartu {
+        flex-direction: column;
+    }
+}
+
+
+/* kartu our team selesai*/
+
+
+/* button untuk ke atas halaman */
+
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    #button {
+        font-size: 1.2em;
+        line-height: 20px;
+    }
+}
+
+
+/* button untuk ke atas halaman selesai*/
+
+
+/* FOOTER */
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 90%;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.medsos a {
+    display: inline-flex;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: transparent;
+    color: orange;
+    font-size: 2rem;
+    border: 2px solid orange;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.medsos a:hover,
+.medsos a.active {
+    background: orange;
+    color: #000;
+    box-shadow: 0 0 20px orange;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100vw;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom p a {
+    color: #44bae8;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.footer-menu {
+    float: right;
+}
+
+.footer-menu ul {
+    display: flex;
+}
+
+.footer-menu ul li {
+    padding-right: 10px;
+    display: block;
+}
+
+.footer-menu ul li a {
+    color: #cfd2d6;
+    text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+    color: #27bcda;
+}
+
+@media (max-width:500px) {
+    .footer-menu ul {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* FOOTER selsai */

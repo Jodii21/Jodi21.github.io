@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Input</title>
+    <link rel="stylesheet" type="text/css" href="EWallet.css">
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="form">
+        <div class="form-group">
+          <label for="jenis">Jenis E-Wallet:</label>
+          <!-- <input type="text" id="jenis" name="jenis" required> -->
+          <select type="text" class="jenisDrop" id="jenis" name="jenis" required>
+            <option value="">Pilih satu</option>
+            <option value="Gopay">BNI</option>
+            <option value="Gopay">BRI</option>
+            <option value="Gopay">BCA</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="noCek">No E-Wallet:</label>
+          <input class="cariRek" type="text" id="noCek" name="noCek" required>
+        </div>
+        <button type="submit">Cari</button>
+      </form>
+      <div id="form-data" class="form-data hide">
+        <h2>Hasil No Rekening E-Wallet</h2>
+        <p id="jenis-data"></p>
+        <p id="no-data"></p>
+        <p>Nomor E-Wallet yang anda cari belum pernah terlibat dalam penipuan/belum ada yang melaporkan</p>
+      </div>
+    </div>
+    <script src="EWallet.js"></script>
+  </body>
+</html>
