@@ -2,34 +2,34 @@
 <html>
   <head>
     <title>Form Input</title>
-    <link rel="stylesheet" type="text/css" href="EWallet.css">
+    <link rel="stylesheet" type="text/css" href="Bank.css">
   </head>
   <body>
     <div class="form-container">
       <form id="form">
         <div class="form-group">
-          <label for="jenis">Jenis E-Wallet:</label>
+          <label for="jenis">Jenis Rekening</label>
           <!-- <input type="text" id="jenis" name="jenis" required> -->
           <select type="text" class="jenisDrop" id="jenis" name="jenis" required>
             <option value="">Pilih satu</option>
-            <option value="Gopay">BNI</option>
-            <option value="Gopay">BRI</option>
-            <option value="Gopay">BCA</option>
+            <option value="BNI">BNI</option>
+            <option value="BRI">BRI</option>
+            <option value="BCA">BCA</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="noCek">No E-Wallet:</label>
+          <label for="noCek">No Rekening</label>
           <input class="cariRek" type="text" id="noCek" name="noCek" required>
         </div>
         <button type="submit">Cari</button>
       </form>
       <div id="form-data" class="form-data hide">
-        <h2>Hasil No Rekening E-Wallet</h2>
+        <h2>Hasil No Rekening</h2>
         <p id="jenis-data"></p>
         <p id="no-data"></p>
-        <p>Nomor E-Wallet yang anda cari belum pernah terlibat dalam penipuan/belum ada yang melaporkan</p>
+        <p>Nomor Rekening yang anda cari belum pernah terlibat dalam penipuan/belum ada yang melaporkan</p>
       </div>
     </div>
-    <script src="EWallet.js"></script>
+    <script src="Bank.js"></script>
   </body>
 </html>
