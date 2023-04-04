@@ -113,6 +113,10 @@ section {
     font-weight: 700;
 }
 
+.textline {
+    white-space: pre-wrap;
+}
+
 .home-detail h1 {
     font-size: 5.6rem;
     font-weight: 700;
@@ -253,10 +257,6 @@ h2 {
     background: black;
     color: orange;
     border: 1px solid black;
-}
-
-.card a {
-    text-decoration: none;
 }
 
 
@@ -638,10 +638,8 @@ h2 {
 
 @media (max-width: 768px) {
     #button {
-        width: 30px;
-        height: 20px;
-        bottom: 12px;
-        right: 10px;
+        font-size: 1.2em;
+        line-height: 20px;
     }
 }
 
@@ -678,7 +676,7 @@ footer {
 }
 
 .footer-content p {
-    max-width: 500px;
+    max-width: 90%;
     margin: 10px auto;
     line-height: 28px;
     font-size: 14px;
