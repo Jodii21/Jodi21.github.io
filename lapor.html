@@ -1,37 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="lapor.css">
-
-    <title>Laporin Yuk</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style_login.css">
 </head>
 <body>
-    <section class="home" id="home">
-        <div id="EWallet" class="tabcontent" onsubmit="">
-            <h3>Cek E-Wallet</h3>
-            <label for="jenis">Jenis E-Wallet/No Rekening Bank:</label><br><br>
-            <select type="text" class="jenisDrop" id="jenis">
-                    <option value="Jenis E-Wallet" hidden></option>
-                    <option value="Dana">Dana</option>
-                    <option value="Gopay">Gopay</option>
-                    <option value="Gopay">BNI</option>
-                    <option value="Gopay">BRI</option>
-                    <option value="Gopay">BCA</option>
-                    
-            </select>
-            <label for="message">No E-Wallet/Bank:</label><br>
-            <input type="text" class="cariRek" id="cekInput"><br><br>
-            <label for="message">Message:</label><br>
-            <textarea class="pesan" id="pesan" name="message" required></textarea>
-            <button type="submit" onclick="lapor()">Cari</button><br><br>
-            <ul id="daftar-cekInput"> </ul>
-            <ul id="daftar-jenis"> </ul>
-            <ul id="daftar-pesan"> </ul>
+<!-- partial:index.partial.html -->
+<div class="logo text-center">
+  
+</div>
+  <div class="wrapper">
+    <div class="inner-warpper text-center">
+    <img src="image/login.jpg" width="250px;">
+    <form action="home-afterlog.html" id="formvalidate">
+      <div class="input-group">
+        <label class="palceholder" for="userName">User Name</label>
+        <input class="form-control" name="userName" id="userName" type="text" placeholder="" />
+        <span class="lighting"></span>
+      </div>
+      <div class="input-group">
+        <label class="palceholder" for="userPassword">Password</label>
+        <input class="form-control" name="userPassword" id="userPassword" type="password" placeholder="" />
+        <span class="lighting"></span>
+      </div>      
+      <div class="clearfix supporter">
+        <div class="pull-left remember-me">
+          <input id="rememberMe" type="checkbox">
+          <label for="rememberMe">Remember Me</label>
         </div>
-    </section>    
+        <a class="forgot pull-right" href="#">Forgot Password?</a>
+      </div><br>
+      <button type="submit" id="login">Login</button>
+    </form><br>
+    <span style="font-size: 12px">Don't have an accout? Create an <a href="signup.html"> Account</a></span>
+  </div>
+  </div>
+</div>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script><script  src="./script_login.js"></script>
 </body>
-<script src="lapor.js"></script>
 </html>
