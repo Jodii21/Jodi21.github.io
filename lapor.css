@@ -39,11 +39,12 @@ body {
   }
   
   input[type="text"],
-  textarea {
+  textarea, select {
     padding: 5px;
     border: none;
     border-bottom: 2px solid #ccc;
     font-size: 16px;
+    background-color: orange;
   }
   
   button[type="submit"] {
